@@ -1,0 +1,42 @@
+/* Ensure the display container follows the grid rules */
+.display {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: auto; /* Rows will adjust based on content */
+    gap: 10px;
+    padding: 20px;
+    justify-content: center;
+}
+
+/* Style each card */
+.card {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style button */
+.card button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background-color: darkred;
+}
